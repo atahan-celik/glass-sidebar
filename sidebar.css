@@ -75,6 +75,7 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
+  border-radius: 50px;
   top: 15px;
   right: -15px;
 }
