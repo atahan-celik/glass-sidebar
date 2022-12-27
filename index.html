@@ -12,7 +12,7 @@
     <div class="sidebar">
         <div class="sidebar-header">
             <img class="avatar" src="avatar.png" alt="">
-            <div class="sidebar-header-title">Atahan Çelik</div>
+            <div class="sidebar-header-title">Ezgi Sarı</div>
             <a href="#" class="sidebar-toggle">
                 <i class="bi bi-chevron-left"></i>
             </a>    
@@ -57,23 +57,21 @@
     </div>
   
     <script>
-        const sidebar = document.querySelector('sidebar')
-        const sidebarToggleBtn = document.querySelector('.sidebar-toggle')
+        const sidebar = document.querySelector('.sidebar')
+        const siderbarToggleBtn = document.querySelector('.sidebar-toggle')
 
-        sidebarToggleBtn.onclick =(e) => {
+        siderbarToggleBtn.onclick = (e) => {
             e.preventDefault()
             sidebar.classList.toggle('sidebar-small')
         }
 
         window.onresize = () => {
-            if(window.innerWidth < 600){
+            if (window.innerWidth < 600) {
                 sidebar.classList.add('sidebar-small')
-
-            }else{
+            } else {
                 sidebar.classList.remove('sidebar-small')
             }
         }
-
     </script>
 </body>
 </html>
